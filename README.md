@@ -7,9 +7,9 @@ This project utilizes the `Titanic - Machine Learning from Disaster` dataset whi
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
 
 ### Required Packages
-- pandas, numpy
+- Pandas, NumPy
 - scikit-learn
-- pylinter
+- Pylint
 
 You can install these packages using `pip`:
 
@@ -81,10 +81,11 @@ pip install pylint
 Visual Studio Code (VS Code) supports Pylint integration to provide real-time linting as you write code. Here's how to set it up:
   - Ensure Pylint is Installed: First, make sure Pylint is installed in your environment as described above.
   - Install the Python Extension for VS Code: If not already installed, search for the Python extension by Microsoft in the Extensions view (Ctrl+Shift+X) and install it.
-  - Enable Pylint: Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on Mac) and type "Python: Select Linter." Choose pylint from the list.
-  - Configure Pylint (Optional): You can customize Pylint's behavior by adding a .pylintrc file to your project's root. To generate a default configuration file, run:
-    ```bash
-    pylint --generate-rcfile > .pylintrc
-    ```
-  You can then modify this file according to your project's standards.
+  - Enable Pylint: Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on Mac) and type "Python: Select Linter." Choose Pylint from the list.
   - View Linting Feedback: As you write code, Pylint will automatically analyze your code and highlight any issues. Hover over the underlined text to see details and suggestions.
+
+While using, once you enable Pylint in VS Code, you should be able to check the problems for each file. For example, if I don't have the docstring for the module, we should be able to see the Pylint checking info under the section as highlighted below:
+<img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/da499a34-07fe-47da-9a2c-66324aadb84a">
+
+Once we solved all the issues there, the problem section should show the result as "No problems have been detected in the workspace."
+<img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/4166ecd0-6e55-4436-a811-80e29c670e21">
