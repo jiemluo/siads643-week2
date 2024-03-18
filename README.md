@@ -3,7 +3,7 @@
 ## Introduction
 This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
 
-## @@ Environment Setup
+## Environment Setup
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
 
 ### Required Packages
@@ -38,14 +38,17 @@ The training and test data files should be passed as arguments to the script.
 Usage
 To run the script, use the following command:
 
-bash
-Copy code
+```bash
 python titanic.py <input_file> <output_file>
+```
+
 input_file: Path to the CSV file containing the Titanic dataset.
 output_file: Path where the cleaned and processed data will be saved.
-Example:
 
+Example:
+```bash
 python titanic.py train.csv cleaned_train.csv
+```
 After executing, the script will output a CSV file with cleaned data and a trained model ready for prediction or further evaluation.
 
 Testing
