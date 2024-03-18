@@ -84,8 +84,9 @@ Visual Studio Code (VS Code) supports Pylint integration to provide real-time li
   - Enable Pylint: Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on Mac) and type "Python: Select Linter." Choose Pylint from the list.
   - View Linting Feedback: As you write code, Pylint will automatically analyze your code and highlight any issues. Hover over the underlined text to see details and suggestions.
 
+### Make sure to pass a Pylint without errors
 While using, once you enable Pylint in VS Code, you should be able to check the problems for each file. For example, if I don't have the docstring for the module, we should be able to see the Pylint checking info under the section as highlighted below:
-<img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/da499a34-07fe-47da-9a2c-66324aadb84a">
+  <img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/da499a34-07fe-47da-9a2c-66324aadb84a">
 
-Once we solved all the issues there, the problem section should show the result as "No problems have been detected in the workspace."
-<img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/4166ecd0-6e55-4436-a811-80e29c670e21">
+Once we resolved all the issues there, the problem section should show the result as "No problems have been detected in the workspace."
+  <img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/4166ecd0-6e55-4436-a811-80e29c670e21">
