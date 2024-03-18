@@ -76,7 +76,6 @@ def make_pipeline():
 
     return model_pipeline
 
-
 def train_model(data_cleaned):
     """
    Train the RandomForestClassifier model using the provided DataFrame and pipeline.
