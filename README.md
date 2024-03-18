@@ -1,10 +1,9 @@
 # Titanic Dataset Analysis and Model Training
 
 ## Introduction
-$${\color{blue}Introduction$$
 This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
 
-## <code style="color : blue">Environment Setup</code>
+## @@ Environment Setup
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
 
 ### Required Packages
