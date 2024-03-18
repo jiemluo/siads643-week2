@@ -28,13 +28,15 @@ Ensure you have the Titanic dataset in CSV format available. The script expects 
   - Embarked
 The training and test data files should be passed as arguments to the script.
 
-## Script Functionality
+## Script Functionality & Usage
+
+### Functionalities
   - <b>load_data</b>: Loads the Titanic data from a CSV file into a pandas DataFrame.
   - <b>clean_data</b>: Processes the DataFrame by extracting titles from names, creating features from ticket information, and categorizing family size.
   - <b>make_pipeline</b>: Constructs a machine learning pipeline that handles the preprocessing of different types of features and initializes the RandomForestClassifier.
   - <b>train_model</b>: Trains the RandomForestClassifier using the cleaned and processed data, evaluating it on a hold-out set and printing out performance metrics.
 
-## Usage
+### Usage
 To run the script, use the following command:
 
 ```bash
@@ -50,8 +52,8 @@ python titanic.py data/train.csv data/clean_data.csv
 ```
 After executing, the script will output a CSV file with cleaned data and a trained model ready for prediction or further evaluation.
 
-## Testing
-To ensure the quality and correctness of our script, unit tests have been written using Python's built-in unittest framework.
+## Unit Testing
+To ensure the quality and correctness of our script, unit tests have been written using Python's built-in unit-test framework.
 
 ### Running Tests
 To run the tests, execute the test_titanic.py file using Python. No additional arguments are required.
@@ -59,4 +61,4 @@ To run the tests, execute the test_titanic.py file using Python. No additional a
 python unit_test.py 
 ```
 
-This will run all the unit tests defined in the test file and output the results, indicating whether each test has passed or failed. It's recommended to run these tests after any changes to the script to ensure all functionalities still work as expected.
+Note: This will run all the unit tests defined in the test file and output the results, indicating whether each test has passed or failed. It's recommended to run these tests after any changes to the script to ensure all functionalities still work as expected.
