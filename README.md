@@ -9,6 +9,7 @@ To run this script, you will need to have Python installed along with several pa
 ### Required Packages
 - pandas, numpy
 - scikit-learn
+- pylinter
 
 You can install these packages using `pip`:
 
@@ -64,3 +65,26 @@ python unit_test.py
 ```
 
 Note: This will run all the unit tests defined in the test file and output the results, indicating whether each test has passed or failed. It's recommended to run these tests after any changes to the script to ensure all functionalities still work as expected.
+
+## Code Quality with Pylint
+To maintain high code quality and ensure consistency across the project, we use Pylint, a Python static code analysis tool. Pylint checks for coding standards, errors, and offers refactoring suggestions.
+
+### Installing Pylint
+If you haven't installed Pylint yet, you can do so using pip. Run the following command in your terminal:
+
+```bash
+pip install pylint
+```
+
+### Using Pylint in Visual Studio Code
+
+Visual Studio Code (VS Code) supports Pylint integration to provide real-time linting as you write code. Here's how to set it up:
+  - Ensure Pylint is Installed: First, make sure Pylint is installed in your environment as described above.
+  - Install the Python Extension for VS Code: If not already installed, search for the Python extension by Microsoft in the Extensions view (Ctrl+Shift+X) and install it.
+  - Enable Pylint: Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on Mac) and type "Python: Select Linter." Choose pylint from the list.
+  - Configure Pylint (Optional): You can customize Pylint's behavior by adding a .pylintrc file to your project's root. To generate a default configuration file, run:
+```bash
+pylint --generate-rcfile > .pylintrc
+```
+  You can then modify this file according to your project's standards.
+  - View Linting Feedback: As you write code, Pylint will automatically analyze your code and highlight any issues. Hover over the underlined text to see details and suggestions.
