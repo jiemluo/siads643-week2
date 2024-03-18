@@ -39,7 +39,7 @@ def clean_data(df):
     df['Fam_size'] = df['SibSp'] + df['Parch'] + 1
     df['Fam_type'] = pd.cut(df['Fam_size'], bins=[0, 1, 4, 7, 11],
                             labels=['Solo', 'Small', 'Big', 'Very big'])
-    clean_df = df
+    clean_df = df.dropna()
     return clean_df
 
 def make_pipeline():
