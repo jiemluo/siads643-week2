@@ -7,25 +7,25 @@ This script is designed to process and analyze data from the Titanic dataset. It
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
 
 ### Required Packages
-- pandas
+- pandas, numpy
 - scikit-learn
-- numpy
 
 You can install these packages using `pip`:
 
 ```bash
 pip install pandas scikit-learn numpy
+```
+
 Data Files
 Ensure you have the Titanic dataset in CSV format available. The script expects the following columns as a minimum:
-
-Survived (the target variable)
-Pclass
-Name
-SibSp
-Parch
-Ticket
-Fare
-Embarked
+  - Survived (the target variable)
+  - Pclass
+  - Name
+  - SibSp
+  - Parch
+  - Ticket
+  - Fare
+  - Embarked
 The training and test data files should be passed as arguments to the script.
 
 Script Functionality
