@@ -46,7 +46,7 @@ output_file: Path where the cleaned and processed data will be saved.
 
 ### Example:
 ```bash
-python titanic.py train.csv cleaned_train.csv
+python titanic.py data/train.csv data/clean_data.csv
 ```
 After executing, the script will output a CSV file with cleaned data and a trained model ready for prediction or further evaluation.
 
