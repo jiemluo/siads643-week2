@@ -1,7 +1,7 @@
 # Titanic Dataset Analysis and Model Training
 
 ## Introduction
-This project utilizes the `Titanic - Machine Learning from Disaster` dataset which is available on Kaggle platform (https://www.kaggle.com/competitions/titanic/data). This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
+This project utilizes the `Titanic - Machine Learning from Disaster` dataset which is available on the Kaggle platform (https://www.kaggle.com/competitions/titanic/data). This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
 
 ## Environment Setup
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
@@ -88,5 +88,10 @@ Visual Studio Code (VS Code) supports Pylint integration to provide real-time li
 While using, once you enable Pylint in VS Code, you should be able to check the problems for each file. For example, if I don't have the docstring for the module, we should be able to see the Pylint checking info under the section as highlighted below:
   <img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/da499a34-07fe-47da-9a2c-66324aadb84a">
 
-Once we resolved all the issues there, the problem section should show the result as "No problems have been detected in the workspace."
+Once we resolve all the issues there, the problem section should show the result as "No problems have been detected in the workspace."
   <img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/4166ecd0-6e55-4436-a811-80e29c670e21">
+
+## Expected Running Results
+As a result of running the scripts in your own environment, you should be able to see the results as below:
+  <img width="717" alt="image" src="https://github.com/jiemluo/siads643-week2/assets/162662380/c2a90224-8ce8-4cdd-83f0-f50dcdc1287a">
+
