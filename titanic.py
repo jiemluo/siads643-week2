@@ -19,7 +19,7 @@ def load_data(filepath):
     Returns:
         pd.DataFrame: Loaded data.
     """
-    print('load_data...')
+    # Load data from the file path
     df = pd.read_csv(filepath)
     return df
 
@@ -33,12 +33,28 @@ def clean_data(df):
     Returns:
         pd.DataFrame: Cleaned and preprocessed DataFrame.
     """
+    # Extract title from the 'Name' column. The title is the string between ',' and '.'
+    # The original name would be like "	Cumings, Mrs. John Bradley (Florence Briggs Thayer)"
+    # we want to extract the result as "Mrs"
     df['Title'] = df['Name'].apply(lambda x: x.split(',')[1].split('.')[0].strip())
+
+    # Extract the first two letters from the 'Ticket' column as a new feature
+    # The original ticket is like "PC 17599"
+    # we want to extract the result as "PC"
     df['Ticket_2letter'] = df.Ticket.apply(lambda x: x[:2])
+    # Calculate the length of each ticket number/string and store it as a new feature
     df['Ticket_len'] = df['Ticket'].str.len()
+
+    # Calculate family size by adding the number of siblings/spouses ('SibSp')
+    # and the number of parents/children ('Parch'), plus 1 for the passenger themselves
     df['Fam_size'] = df['SibSp'] + df['Parch'] + 1
+
+    # Categorize family size into discrete bins for solo travelers,
+    # small families, big families, and very big families
     df['Fam_type'] = pd.cut(df['Fam_size'], bins=[0, 1, 4, 7, 11],
                             labels=['Solo', 'Small', 'Big', 'Very big'])
+
+    # Drop rows with any missing values across all columns in the DataFrame
     clean_df = df.dropna()
     return clean_df
 
