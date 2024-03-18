@@ -83,8 +83,8 @@ Visual Studio Code (VS Code) supports Pylint integration to provide real-time li
   - Install the Python Extension for VS Code: If not already installed, search for the Python extension by Microsoft in the Extensions view (Ctrl+Shift+X) and install it.
   - Enable Pylint: Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on Mac) and type "Python: Select Linter." Choose pylint from the list.
   - Configure Pylint (Optional): You can customize Pylint's behavior by adding a .pylintrc file to your project's root. To generate a default configuration file, run:
-```bash
-pylint --generate-rcfile > .pylintrc
-```
+    ```bash
+    pylint --generate-rcfile > .pylintrc
+    ```
   You can then modify this file according to your project's standards.
   - View Linting Feedback: As you write code, Pylint will automatically analyze your code and highlight any issues. Hover over the underlined text to see details and suggestions.
