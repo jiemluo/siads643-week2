@@ -1,7 +1,7 @@
 # Titanic Dataset Analysis and Model Training
 
 ## Introduction
-This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
+This project utilizes the `Titanic - Machine Learning from Disaster` dataset which is available on Kaggle platform (https://www.kaggle.com/competitions/titanic/data). This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
 
 ## Environment Setup
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
@@ -17,6 +17,8 @@ pip install <package name>
 ```
 
 ### Data Files
+The dataset comes in two parts: a training set and a test set for the competition. For the purposes of this project, only the training set is used. The training set includes the target variable, which allows for supervised learning tasks. The dataset is further split into training and validation subsets to train and evaluate the model's performance.
+
 Ensure you have the Titanic dataset in CSV format available. The script expects the following columns as a minimum:
   - Survived (the target variable)
   - Pclass
