@@ -1,7 +1,7 @@
 # Titanic Dataset Analysis and Model Training
 
 ## Introduction
-This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
+This script is designed to process and analyze data from the Titanic dataset. It performs data cleaning, and feature engineering, and trains a RandomForestClassifier to predict survival outcomes of the Titanic passengers. The script is modular and can be used to process similar formatted datasets.
 
 ## Environment Setup
 To run this script, you will need to have Python installed along with several packages used for data processing and machine learning.
@@ -13,10 +13,10 @@ To run this script, you will need to have Python installed along with several pa
 You can install these packages using `pip`:
 
 ```bash
-pip install pandas scikit-learn numpy
+pip install <package name>
 ```
 
-Data Files
+<b>Data Files</b>
 Ensure you have the Titanic dataset in CSV format available. The script expects the following columns as a minimum:
   - Survived (the target variable)
   - Pclass
@@ -28,11 +28,12 @@ Ensure you have the Titanic dataset in CSV format available. The script expects 
   - Embarked
 The training and test data files should be passed as arguments to the script.
 
-Script Functionality
-load_data: Loads the Titanic data from a CSV file into a pandas DataFrame.
-clean_data: Processes the DataFrame by extracting titles from names, creating features from ticket information, and categorizing family size.
-make_pipeline: Constructs a machine learning pipeline that handles preprocessing of different types of features and initializes the RandomForestClassifier.
-train_model: Trains the RandomForestClassifier using the cleaned and processed data, evaluating it on a hold-out set and printing out performance metrics.
+<b>Script Functionality</b>
+  - <b>load_data</b>: Loads the Titanic data from a CSV file into a pandas DataFrame.
+  - <b>clean_data</b>: Processes the DataFrame by extracting titles from names, creating features from ticket information, and categorizing family size.
+  - <b>make_pipeline</b>: Constructs a machine learning pipeline that handles the preprocessing of different types of features and initializes the RandomForestClassifier.
+  - <b>train_model</b>: Trains the RandomForestClassifier using the cleaned and processed data, evaluating it on a hold-out set and printing out performance metrics.
+
 Usage
 To run the script, use the following command:
 
